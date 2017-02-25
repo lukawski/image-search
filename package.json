@@ -1,0 +1,31 @@
+{
+  "name": "image-search",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node dist/server.js",
+    "babel": "babel src -w -d dist",
+    "postinstall": "babel src -d dist",
+    "dev": "npm run babel & nodemon dist/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukawski/image-search.git"
+  },
+  "author": "Kacper Łukawski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lukawski/image-search/issues"
+  },
+  "homepage": "https://github.com/lukawski/image-search#readme",
+  "dependencies": {
+    "express": "^4.14.1",
+    "mongoose": "^4.8.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-preset-latest": "^6.22.0"
+  }
+}
