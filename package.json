@@ -21,8 +21,10 @@
   },
   "homepage": "https://github.com/lukawski/image-search#readme",
   "dependencies": {
+    "cheerio": "^0.22.0",
     "express": "^4.14.1",
-    "mongoose": "^4.8.4"
+    "mongoose": "^4.8.4",
+    "request": "^2.79.0"
   },
   "devDependencies": {
     "babel-cli": "^6.23.0",
