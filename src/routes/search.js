@@ -31,8 +31,13 @@ router.get('/imagesearch/:searchString', (req, res) => {
         }
       })
     })
+  })
+})
 
-    // res.send(body)
+router.get('/searchhistory', (req, res) => {
+  MSearchHistory.find({}, '-_id -__v', (err, docs) => {
+    if (err) return console.log(err)
+    res.status(200).send(docs)
   })
 })
 
