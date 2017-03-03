@@ -2,3 +2,4 @@ node_modules
 dist/models
 dist/utilities
 dist/routes
+dist/*.js
